@@ -5,7 +5,7 @@ metadata:
   name: covid19-ingress
 spec:
   rules:
-    - host: my.covid19.info
+    - host: {{ .Values.Host }}
       http:
         paths:
           - path: /
