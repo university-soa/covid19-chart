@@ -1,0 +1,4 @@
+frontend:
+  version: 0.0.2
+news:
+  version: latest

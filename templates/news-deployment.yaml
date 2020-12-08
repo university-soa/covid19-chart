@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: covid19-news-deployment-{{ .Chart.Version }}
+  labels:
+    app: spring-boot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot
+  template:
+    metadata:
+      labels:
+        app: spring-boot
+    spec:
+      containers:
+        - name: covid19-news-be
+          image: denisduev/covid-19:{{ .Values.news.version }}
+          ports:
+            - containerPort: 8081

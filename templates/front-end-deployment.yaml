@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: covid19-deployment-{{ .Chart.Version }}
+  labels:
+    app: vuejs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vuejs
+  template:
+    metadata:
+      labels:
+        app: vuejs
+    spec:
+      containers:
+        - name: covid19-frontend
+          image: denisduev/covid-19-vuejs:{{ .Values.frontend.version }}
+          ports:
+            - containerPort: 8080
