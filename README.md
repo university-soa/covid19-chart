@@ -3,6 +3,8 @@
 This helm chart combines the microservices need for covid19 news application to run. It deploys:
 - [covid19-vuejs-frontend](https://github.com/university-soa/covid19-vuejs-frontend)
 - [covid19-news](https://github.com/university-soa/covid19-news)
+- [covid19-external-golang](https://github.com/university-soa/covid19-external-golang)
+- [covid19-asp-net-core](https://github.com/university-soa/covid19-asp-net-core)
 
 ## How to deploy
 ```

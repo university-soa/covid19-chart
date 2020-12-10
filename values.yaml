@@ -1,6 +1,12 @@
 frontend:
-  version: 0.0.3
+  version: 0.0.4
 news:
   version: latest
 statsImageVersion: latest
+# imageExternalVersion is the tag of the docker image for external news API
+imageExternalVersion: latest
+
+# externalServiceApiKey the API key for https://newsapi.org/docs/endpoints/everything
+externalServiceApiKey:
+
 host: my.covid19.info
