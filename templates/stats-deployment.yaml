@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: covid19-asp-net-deployment
+  labels:
+    app: covid19-asp-net
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: covid19-asp-net
+  template:
+    metadata:
+      labels:
+        app: covid19-asp-net
+    spec:
+      containers:
+        - name: covid19-asp-net-be
+          image: denisduev/covid19-asp-net-core:{{ .Values.statsImageVersion }}
+          ports:
+            - containerPort: 5001

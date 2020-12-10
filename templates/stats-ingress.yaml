@@ -1,0 +1,19 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: covid19-stats-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  rules:
+    - host: {{ .Values.Host }}
+      http:
+        paths:
+          - path: /stats(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: covid19-stats-service
+                port:
+                  number: 5001

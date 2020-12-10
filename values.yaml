@@ -1,5 +1,6 @@
 frontend:
-  version: 0.0.2
+  version: 0.0.3
 news:
   version: latest
+statsImageVersion: latest
 host: my.covid19.info
