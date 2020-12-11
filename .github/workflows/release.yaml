@@ -6,7 +6,8 @@ on:
       - master
     paths:
       - 'charts/**'
-
+      - 'templates/**'
+      - 'Chart.yaml'
 jobs:
   release:
     runs-on: ubuntu-latest
