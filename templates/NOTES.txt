@@ -4,6 +4,8 @@ It installs the k8s resources needed for the covid19 news application.
 
 Your release is named {{ .Release.Name }}.
 
+You can access the app on {{ .Values.host }}
+
 To learn more about the release, try:
 
   $ helm status {{ .Release.Name }}
