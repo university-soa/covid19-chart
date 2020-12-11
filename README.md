@@ -12,3 +12,8 @@ git clone https://github.com/university-soa/covid19-chart
 cd covid19-chart
 helm install <release-name> .
 ```
+
+## How to update
+```
+helm update <release-name> .
+```
