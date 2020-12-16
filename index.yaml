@@ -3,6 +3,18 @@ entries:
   covid19-news:
   - apiVersion: v2
     appVersion: 0.0.2
+    created: "2020-12-16T14:31:41.915804279Z"
+    description: The charts should install application that shows news about covid19. It consists of different parts/microservices.
+    digest: ee2919befaade0cc1a3aedc10545bbc39d7c6eed5650bae2be76f646e2ac871e
+    maintainers:
+    - name: Denis Duev
+    name: covid19-news
+    type: application
+    urls:
+    - https://github.com/university-soa/covid19-chart/releases/download/covid19-news-0.0.3/covid19-news-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.2
     created: "2020-12-14T07:43:45.194734517Z"
     description: The charts should install application that shows news about covid19. It consists of different parts/microservices.
     digest: 914318684524b74057a47f396d156d5339775d0501c2de246cc6ee769fb10a92
