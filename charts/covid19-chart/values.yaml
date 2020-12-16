@@ -1,10 +1,10 @@
 frontend:
   version: 0.0.4
 news:
-  version: latest
+  version: 0.0.3
 statsImageVersion: latest
 # imageExternalVersion is the tag of the docker image for external news API
-imageExternalVersion: latest
+imageExternalVersion: 0.0.1
 
 # externalServiceApiKey the API key for https://newsapi.org/docs/endpoints/everything
 externalServiceApiKey:
