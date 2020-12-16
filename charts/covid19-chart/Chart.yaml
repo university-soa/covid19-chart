@@ -1,6 +1,6 @@
 apiVersion: v2
 name: covid19-news
-version: 0.0.2
+version: 0.0.3
 type: application
 description: The charts should install application that shows news about covid19. It consists of different parts/microservices.
 maintainers:
